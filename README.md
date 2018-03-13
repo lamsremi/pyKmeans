@@ -5,14 +5,13 @@
 
 This module presents different implementations of K-means clustering algorithms in pure python :
 * The first one is based on Lloyd's algorithm.
-* The second uses hartigan's method.
 
 ## Source
 
 
 The following sources were used to write the implementations:
 
-https://en.wikipedia.org/wiki/K-means_clustering
+* https://en.wikipedia.org/wiki/K-means_clustering
 
 
 ## Motivation
@@ -28,31 +27,23 @@ It is also a valuable exercice to practice programming in python language.
 
 The objective of a K-means algorithm is to cluster a set of observation into k groups, called means.
 
-Pros and cons
-
 #### Lloyds algorithm
 
 k observations are first randomly chosen from the data set and are used as the initial means [Forgy method]. Then until the k means aren't moving anymore, one first assign to each of the observation the closest mean [using the Euclidan distance] and secondly one each of the means as the centroid of all the observations assigned to that mean.
 
-#### Hartigan's method
-??
-
-
-
 
 ### Python programing
 
-3 key python concepts were used to implement the different algorihtms:
+3 key python concepts were used to implement the different algorihtms :
 * While compound statement to iterate the computing of the means until they stop moving.
 * Classes and inheritance to model an observation and a mean each inheriting from a List.
-* List comprehensions to computation and code clarity purpose.
+* List comprehensions for computation and code clarity purpose.
 
 ## Code structure
 
 The code is structured as follow :
 ```
 pyKmeans
-├- hardigan.py
 ├- lloyd.py
 └- README.md
 ```
